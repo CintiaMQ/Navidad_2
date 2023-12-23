@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjeta de Navidad</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="card">
+    <h1>¡Feliz Navidad y un feliz año nuevo!</h1>
+    <p>Queridos chivos,</p>
+    <p>¡Que esta temporada navideña esté llena de alegría, amor y momentos especiales!</p>
+    <p>Gracias por ser parte de mi vida y por llenarla con risas</p>
+    <p>Con cariño, para ustedes par de chivos:</p>
+    <p>Jhony<p>
+    </p> Jheremy</p>
+    <audio id="myAudio">
+      <source src="C:\Users\CINTIA\AppData\Local\Doremi\storage\music" type="audio/mpeg">
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <button onclick="toggleAudio()">▶ Reproducir</button>
+  </div>
+
+  <script>
+    function toggleAudio() {
+      var audio = document.getElementById("myAudio");
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+</html>
